@@ -1,0 +1,34 @@
+[
+  {
+    "name":"MyReads",
+    "link":"http://myreads.jamesmartin.codes",
+    "githubLink":"http://github.com/jamesmanone/rnd-myreads",
+    "img":"/img/react.png",
+    "description":"My Reads is a simple single page react.js app. It allows users to browse books on their \"Currently Reading\", \"Want to Read\", and \"Read\" shelves. Users can move books between shelves as well as search for new books to add.",
+    "tags":["react","ajax","JavaScript"]
+  },
+  {
+    "name":"Item Catalog",
+    "link":"http://products.jamesmartin.codes",
+    "githubLink":"http://github.com/jamesmanone/item-catalog",
+    "img":"/img/products.png",
+    "description":"Item Catalog combines third party OAuth 2.0 with PostgreSQL and flask to make a website with a user editable catalog of items. users can browse items by category, and when logged in can add, edit, and delete their own items.",
+    "tags":["python","SQL","Flask","Knockoutjs","Bootstrap","SQLAlchemy"]
+  },
+  {
+    "name":"Neighborhood Map",
+    "link":"http://map.jamesmartin.codes",
+    "githubLink":"http://github.com/jamesmanone/neighborhoodmap",
+    "img":"/img/map.png",
+    "description":"Neighborhood Map is a single page app built with knockout.js. Using a filterable list of POI's it displays a full page Google map of the locations. Wikipedia, Flickr, and Yelp APIs are used to display additional data. Due to the nature of the Yelp Fusion API an express backend was built to handle API calls.",
+    "tags":["Knockout.js","Google Maps","Third party API","Express","node","gulp"]
+  },
+  {
+    "name":"Object Oriented Pong",
+    "link":"http://tennis.jamesmartin.codes",
+    "githubLink":"http://github.com/jamesmanone/object-oriented-pong",
+    "img":"/img/pong.png",
+    "description":"Object Oriented Pong is an html5 canvas recreation of the classic arcade game. Taking this project a step further, every attempt was made to orginize the code into distinct classes to avoid the typical 'spaghetti code' that can occur. This was my first attempt at coding a game",
+    "tags":["canvas","JavaScript","es6","Object Oriented Programing"]
+  }
+]

@@ -1,0 +1,185 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "lato", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8em;
+  webkit-box-sizing: border-box;
+  moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.pic {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  position: relative;
+  z-index: -1;
+}
+
+.pic1 {
+  background-image: url("../img/tampa.jpg");
+  height: 100%;
+}
+
+.pic2 {
+  background-image: url("../img/street.jpg");
+  height: 400px;
+}
+
+.pic3 {
+  background-image: url("../img/mountain.jpg");
+  height: 400px;
+}
+
+.pic4 {
+  background-image: url("../img/code.jpg");
+  min-height: 100%;
+  display: block;
+  overflow-y: auto;
+}
+
+.overtext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.tbox {
+  display: inline-block;
+  background-color: #333;
+  background-color: rgba(15, 15, 15, 0.85);
+  padding: 20px;
+  font-family: 'Play', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 9px;
+  color: #eee;
+  border: 2px solid #999;
+  border-radius: 5px;
+  box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.75);
+}
+
+.section {
+  width: calc(100% - 4px);
+  padding: 15px 0 15px 0;
+  margin-top: -6px;
+  margin-bottom: -6px;
+  /*z-index: 2;*/
+  border: 2px solid #222;
+  border-radius: 10px;
+}
+
+.section::first-letter {
+  font-family: cursive;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.section p {
+  margin: auto;
+  width: 75%;
+  text-align: justify;
+}
+
+.section-default {
+  color: #333;
+  background-color: #ddd;
+  /*font-weight: 600;*/
+}
+
+.section-dark {
+  color: #eee;
+  background-color: #222;
+}
+
+@@keyframes flipCardTop {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(90deg); }
+}
+
+@@keyframes flipCardBottom {
+  from { transform: rotatey(-90deg); }
+  to { transform: rotatey(0deg); }
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0 10px 0;
+  width: 100%;
+  height: 100%;
+  margin: 15px 0 0 0;
+}
+
+.project {
+  display: block;
+  opacity: 1;
+  background-color: #eee;
+  background-image: radial-gradient(
+    ellipse at center,
+    #eee 0, #ddd 70%, #aaa 100%
+  );
+  width: 30%;
+  height: 400px;
+  min-height: 30%;
+  padding: 0;
+  margin: auto;
+  border: 2px solid #333;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.project-front {
+  width: 100%;
+}
+
+.project-front:hover {
+  animation-name: flipCardTop;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.project-back {
+  transform: rotatey(-90deg);
+  position: absolute;
+}
+
+.project-back:hover {
+  animation-name: flipCardBottom;
+  animation-duration: 0.6s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.project-field {
+  padding: 10px 5px 10px 5px;
+  width: 90%;
+}
+
+.ptitle {
+  color: #333;
+  font-size: 26px;
+
+}
+
+.pdescription {
+  color: #333;
+  border: 0;
+}
+
+.pimg {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+@media(max-width: 568px) {
+  .pic {
+    background-attachment: scroll;
+  }
+}

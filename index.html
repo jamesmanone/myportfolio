@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>James Martin's Portfolio</title>
+      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Play:400,700" rel="stylesheet">
+    </head>
+    <body>
+      <div class="pic pic1">
+        <div class="overtext">
+          <div class="tbox">James Martin { Developer }</div>
+        </div>
+      </div>
+      <section class="section section-default">
+        <p>I am a fullstack developer who is fluent in html, css, javascript, and python. I have experience in both frontend and backend frameworks as well as both SQL and NOSQL databases.
+        </p>
+      </section>
+      <div class="pic pic2">
+        <div class="overtext">
+          <div class="tbox">Framework / Database</div>
+        </div>
+      </div>
+      <section class="section section-dark">
+        <p>I have experience with the latest frontend frameworks including React and Angular, as well as others like knockoutjs. I have also implemented backends in express, flask, and even Google App Engine, drawing data from postgreSQL, mongoDB, and other noSQL database solutions.</p>
+      </section>
+      <div class="pic pic3">
+        <div class="overtext">
+          <div class="tbox">Projects</div>
+        </div>
+      </div>
+      <section class="section section-default">
+        <p>I have several examples of my work. From React/Redux frontend projects, to database backed backend projects.
+        Below are several projects I have done. I have included links to live examples of these as well as to my source code repositories.</p>
+      </section>
+      <div class="pic pic4">
+        <!-- ko if: projects -->
+          <div class="projects" data-bind="foreach: projects">
+            <div class="project">
+              <div class="project-front">
+                <div class="project-field ptitle" data-bind="text: name"></div>
+                <img class="project-field pimg" data-bind="attr: {src: img}">
+              </div>
+              <div class="project-back">
+                <div class="project-field pdescription" data-bind="text: $data.description"></div>
+              </div>
+            </div>
+          </div>
+        <!-- /ko -->
+      </div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.2/knockout-min.js"></script>
+      <script src="js/app.js"></script>
+    </body>
+  </html>
